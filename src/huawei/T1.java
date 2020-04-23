@@ -1,6 +1,7 @@
 package huawei;
 //华为常规批实习生笔试    date:2020.04.22
-//要求：    输入一段字符串  输出其中的数字字符   并将数字大小从小到大排序  重复数字不合并
+//要求：    输入一段字符串(字符串连续 中间不含空格 这个条件题目没有给出  是隐含的)  
+//       输出其中的数字字符   并将数字大小从小到大排序  重复数字不合并
 
 
 import java.util.Scanner;
@@ -8,8 +9,10 @@ import java.util.Scanner;
 
 public class T1 {  
 	public static void main(String[] args) {
+		//输入   将屏幕的输入保存到字符串str中
 		Scanner sc = new Scanner(System.in);	
 		String str = sc.next();
+		//处理并输出
 		solute(str);
 	}	
 	public static void solute(String str) {
